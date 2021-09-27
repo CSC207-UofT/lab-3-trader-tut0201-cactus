@@ -1,26 +1,26 @@
 /**
- * Cow
+ * Sheep
  */
-public class Cow implements Tradable, Domesticatable{
+public class Sheep implements Tradable, Domesticatable{
 
     private int age;
 
-    public Cow() {
+    public Sheep() {
         this.age = 1;
     }
 
     /**
-     * Override Domesticatable interface to return cow sound.
-     * @return Return the "Moo" sound
+     * Override Domesticatable interface to return sheep sound.
+     * @return Return the "Bah" sound
      */
     @Override
     public String sound() {
-        return "Moo!";
+        return "Bah!";
     }
 
     /**
-     * Override Tradable interface to get price of cow.
-     * @return Return the price of the cow, which corresponds to their age
+     * Override Tradable interface to get price of sheep.
+     * @return Return the price of the sheep, which corresponds to their age
      */
     @Override
     public int getPrice() {
