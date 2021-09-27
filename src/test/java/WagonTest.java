@@ -29,7 +29,12 @@ public class WagonTest {
     @Test(timeout = 50)
     public void testDowngradeSpeed() {
         w.downgradeSpeed();
-        assertEquals(3, w.getMaxSpeed());
+        assertEquals(2, w.getMaxSpeed());
+    }
+
+    @Test(timeout = 50)
+    public void testGetPrice() {
+        assertEquals(50, w.getPrice());
     }
 
 }
